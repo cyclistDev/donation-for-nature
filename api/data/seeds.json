@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kav-lak",
+    "name": "Kav lak",
+    "image": "img/Kavlak.png"
+  },
+  {
+    "id": "chanty",
+    "name": "Chanty",
+    "image": "img/Chanty.png"
+  },
+  {
+    "id": "churkruth",
+    "name": "Churkruth",
+    "image": "img/Churk Ruth.png"
+  },
+  {
+    "id": "lor-ngor",
+    "name": "Lor Ngor",
+    "image": "img/L'Ngor.png"
+  },
+  {
+    "id": "krob-lpav",
+    "name": "Krob L'Pav",
+    "image": "img/Lor Pav.png"
+  },
+  {
+    "id": "almun",
+    "name": "Almun",
+    "image": "img/Almun.png"
+  }
+]

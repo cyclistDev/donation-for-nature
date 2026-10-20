@@ -1,0 +1,32 @@
+[
+  {
+    "id": "purpose",
+    "question": "What is the purpose of Seeds of Tomorrow?",
+    "answer": "We work to protect and preserve tree seeds to ensure the survival of forests and ecosystems worldwide."
+  },
+  {
+    "id": "seed-importance",
+    "question": "Why are tree seeds important?",
+    "answer": "Tree seeds are the foundation of forests, helping to regulate climate, support biodiversity, and provide essential resources."
+  },
+  {
+    "id": "donation-impact",
+    "question": "How can my donation help?",
+    "answer": "Your donation supports tree seed collection, conservation efforts, and reforestation projects to restore ecosystems and fight climate change."
+  },
+  {
+    "id": "seed-sources",
+    "question": "Where do the tree seeds come from?",
+    "answer": "We collect seeds from local forests, nurseries, and partners involved in reforestation and conservation."
+  },
+  {
+    "id": "get-involved",
+    "question": "How can I get involved?",
+    "answer": "You can volunteer, share our mission, or organize fundraising events to help spread awareness and support our efforts."
+  },
+  {
+    "id": "tax-deductible",
+    "question": "Are donations tax-deductible?",
+    "answer": "Yes, all donations are tax-deductible, and you will receive a receipt for your records."
+  }
+]

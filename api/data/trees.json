@@ -1,0 +1,32 @@
+[
+  {
+    "id": "derm-kao-su",
+    "name": "Derm Kao Su",
+    "image": "img/Derm Kavsu.jpeg"
+  },
+  {
+    "id": "derm-kro-nhung",
+    "name": "Derm Kro Nhung",
+    "image": "img/Kro Nhong.jpeg"
+  },
+  {
+    "id": "tnaot",
+    "name": "Tnaot",
+    "image": "img/Tnaot.jpg"
+  },
+  {
+    "id": "derm-preng-khjurl",
+    "name": "Derm Preng Kh'jurl",
+    "image": "img/image copy.png"
+  },
+  {
+    "id": "derm-kor-ngork",
+    "name": "Derm Kor Ngork",
+    "image": "img/Kor Ngork.png"
+  },
+  {
+    "id": "derm-ko",
+    "name": "Derm Ko",
+    "image": "img/Kor.png"
+  }
+]
