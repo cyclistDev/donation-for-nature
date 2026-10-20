@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const trees = require("./data/trees.json");
 const seeds = require("./data/seeds.json");
 const faqs = require("./data/faqs.json");
@@ -14,8 +15,17 @@ app.use(
   })
 );
 
+// Serve static files from frontend directory
+const frontendPath = path.join(__dirname, "..", "frontend");
+app.use(express.static(frontendPath));
+
 app.get("/api/health", (request, response) => {
   response.json({ status: "ok" });
+});
+
+// Serve index.html at root path
+app.get("/", (request, response) => {
+  response.sendFile(path.join(frontendPath, "index.html"));
 });
 
 function registerReadOnlyCollection(path, records) {

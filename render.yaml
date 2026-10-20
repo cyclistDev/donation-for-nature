@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: donation-for-nature
+    env: node
+    plan: free
+    buildCommand: cd api && npm install
+    startCommand: cd api && npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production

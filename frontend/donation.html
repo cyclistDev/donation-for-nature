@@ -3,14 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="icon" href="img/logo.png" />
+    <title>Donation section</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* Custom styles for the donation section */
+      .donation-section {
+        background-image: url("img/seed2.avif");
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+        color: white;
+      }
+      .donation-header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .donation-header h2 {
+        font-size: 2.5rem;
+        color: #fff;
+      }
+      .donation-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-success">
@@ -50,7 +71,7 @@
               <a
                 class="nav-link active text-warning fw-bold fs-5"
                 aria-current="page"
-                href="#"
+                href="about.html"
                 >About Us</a
               >
             </li>
@@ -79,163 +100,90 @@
               >
             </li>
             <button type="button" class="btn btn-warning rounded-pill fw-bold">
-              <a href="dontation.html" class="text-decoration-none">Donate</a>
+              <a href="donation.html" class="text-decoration-none">Donate</a>
             </button>
           </ul>
         </div>
       </div>
     </nav>
-    <h2 class="text-center mt-4 text-success fw-bold">
-      Why the World Needs Millions <br />
-      of Trees — And How to Plant <br />
-      Them Right
-    </h2>
-    <div class="img">
-      <h5 class="text-light">
-        The world urgently needs millions of trees to combat climate change,
-        restore ecosystems, and improve quality of life. However, planting trees
-        effectively requires careful planning and execution. Here’s why the
-        world needs more trees and how to plant them properly:
-      </h5>
-    </div>
-    <p class="fs-5 text-center fw-bold mt-5">
-      Encouraging emotional investment in your project <br />
-      by showing its deeper meaning and long-lasting impact.
-    </p>
-    <div class="card mb-3 m-5 mx-auto p-2" style="max-width: 800px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="img/Pasted image (2).png"
-            class="img-fluid rounded-start"
-            style="border-radius: 3px"
-            alt="..."
-          />
+    <!-- Donation Section -->
+    <section class="donation-section">
+      <div class="container">
+        <div class="donation-header">
+          <h2>Support Our Cause</h2>
+          <p>Make a difference with your donation today!</p>
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="fw-bold">Combat Climate Change</h5>
-            <p class="card-text">
-              Trees absorb carbon dioxide, a major greenhouse gas, and store it
-              in their biomass and soil. Reforestation and afforestation can
-              help offset carbon emissions, slowing global warming.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-3 m-5 mx-auto p-2" style="max-width: 800px">
-      <div class="row g-0">
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="fw-bold">Improve Air Quality</h5>
-            <p class="card-text">
-              Trees filter pollutants from the air, providing cleaner, healthier
-              environments, especially in urban areas. Trees play a crucial role
-              in filtering harmful pollutants from the air. Their leaves and
-              bark capture fine particulates like dust, soot, and smoke. They
-              also absorb gases such as nitrogen dioxide (NO₂), sulfur dioxide
-              (SO₂), and carbon monoxide (CO), which are major contributors to
-              air pollution.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="img/Pasted image (3).png"
-            class="img-fluid rounded-start"
-            style="height: 100%; width: 200%; border-radius: 3px"
-            alt="..."
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-3 m-5 mx-auto p-2" style="max-width: 800px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="img/Pasted image (4).png"
-            class="img-fluid rounded-start"
-            style="height: 100%; border-radius: 3px"
-            alt="..."
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="fw-bold">The Importance of Soil Health for Trees</h5>
-            <p class="card-text">
-              Healthy soil is the foundation for robust tree growth, supporting
-              not only the trees themselves but also the broader ecosystem.
-              Healthy soil is alive with beneficial microbes, fungi, and worms
-              that break down organic matter, aerate the soil, and make
-              nutrients available to trees.
-            </p>
-          </div>
+        <div class="donation-form">
+          <form action="submit_donation.php" method="POST">
+            <div class="mb-3">
+              <label for="donationAmount" class="form-label"
+                >Donation Amount</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="donationAmount"
+                name="donationAmount"
+                placeholder="$ Amount"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="donorName" class="form-label">Your Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="donorName"
+                name="donorName"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="donationMethod" class="form-label"
+                >Payment Method</label
+              >
+              <select
+                class="form-select"
+                id="donationMethod"
+                name="donationMethod"
+                required
+              >
+                <option value="" disabled selected>
+                  Select Payment Method
+                </option>
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank_transfer">Bank Transfer</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Donate Now
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-    <div class="card mb-3 m-5 mx-auto p-2" style="max-width: 800px">
-      <div class="row g-0">
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="fw-bold">
-              Engaging Local Communities in Tree Planting and Care
-            </h5>
-            <p class="card-text">
-              Involve local residents in planting and caring for trees. This
-              fosters ownership and ensures long-term success. Community
-              involvement is a key factor in the long-term success of tree
-              planting initiatives. When people feel connected to their
-              environment and take an active role, the results are more
-              sustainable and impactful.
-            </p>
-          </div>
-        </div>
-        <div class="box-img col-md-4">
-          <img
-            src="img/Pasted image (5).png"
-            class="img-fluid rounded-start"
-            style="height: 100%; border-radius: 3px"
-            alt="..."
-          />
-        </div>
-      </div>
-    </div>
-    <div class="por bg-success">
-      <h2 class="fw-bold">SEEDS OF TOMORROW</h2>
-      <h3 class="fw-bold">
-        HOLD THE PROMISE <br />
-        OF THRIVING FORESTS
-      </h3>
-      <p class="fw-bold">
-        Plant the seed of hope today. Your support will grow <br />
-        into forests that breathe life, shade communities, <br />
-        and protect our planet for generations. Donate now <br />
-        to make a lasting impact on nature.
-      </p>
-      <button
-        type="button"
-        class="btn btn-warning text-success rounded-pill fw-bold fs-5"
-        style="width: 150px"
-      >
-        DONATE
-      </button>
-      <img
-        src="img/Pasted image (6).png"
-        style="width: 60%; height: 440px"
-        class="rounded-pill"
-        alt="..."
-      />
-    </div>
-    <footer class="bg-success py-2">
+    </section>
+    <footer data-aos="fade-up" class="bg-success py-2">
       <div
         class="container d-flex flex-column flex-lg-row justify-content-between"
       >
         <div class="mb-4 mb-lg-0">
           <img
-            src="img/tree.png"
+            src="img/logotree.png"
             alt="logo"
             class="img-fluid mb-1"
             style="width: 100px"
@@ -354,5 +302,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
