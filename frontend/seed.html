@@ -97,29 +97,56 @@
         Join us in our mission to spread environmental awareness through the
         power of seeds.
       </p>
-    <ul class="row list-unstyled g-3 mt-2">
-      <li class="col-md-4">
-        <div class="h-100 rounded-3 bg-white p-3">
-          <h3 class="h5 text-success">Biodiversity Boosters</h3>
-          <p class="mb-0">Seeds that promote ecological diversity and resilience.</p>
-        </div>
-      </li>
-      <li class="col-md-4">
-        <div class="h-100 rounded-3 bg-white p-3">
-          <h3 class="h5 text-success">Sustainable Growth</h3>
-          <p class="mb-0">Fostering long-term environmental sustainability.</p>
-        </div>
-      </li>
-      <li class="col-md-4">
-        <div class="h-100 rounded-3 bg-white p-3">
-          <h3 class="h5 text-success">Community Engagement</h3>
-          <p class="mb-0">
-            Join local environmental initiatives and help plant the seeds of
-            change for a sustainable future.
-          </p>
-        </div>
-      </li>
-    </ul>
+      <ul class="row list-unstyled g-3 mt-2">
+        <li class="col-md-4">
+          <div class="h-100 rounded-3 bg-white p-3">
+            <h3 class="h5 text-success">Biodiversity Boosters</h3>
+            <p class="mb-0">
+              Seeds that promote ecological diversity and resilience.
+            </p>
+          </div>
+        </li>
+        <li class="col-md-4">
+          <div class="h-100 rounded-3 bg-white p-3">
+            <h3 class="h5 text-success">Sustainable Growth</h3>
+            <p class="mb-0">Fostering long-term environmental sustainability.</p>
+          </div>
+        </li>
+        <li class="col-md-4">
+          <div class="h-100 rounded-3 bg-white p-3">
+            <h3 class="h5 text-success">Community Engagement</h3>
+            <p class="mb-0">
+              Join local environmental initiatives and help plant the seeds of
+              change for a sustainable future.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container catalog-tools" aria-label="Search seed collection">
+      <div class="catalog-search">
+        <label class="form-label fw-semibold" for="seedSearch">Search seeds</label>
+        <input
+          class="form-control"
+          id="seedSearch"
+          type="search"
+          data-catalog-search="seeds"
+          placeholder="Search by seed name"
+          autocomplete="off"
+        />
+      </div>
+      <p
+        class="catalog-count"
+        data-catalog-count="seeds"
+        role="status"
+        aria-live="polite"
+      >
+        6 seeds available.
+      </p>
+      <p class="catalog-empty" data-catalog-empty="seeds" hidden>
+        No seeds match your search. Try a different name.
+      </p>
     </section>
 
     <div data-api-collection="seeds" class="row row-cols-1 row-cols-md-3 g-4 m-5">

@@ -117,6 +117,30 @@
         </div>
       </div>
     </section>
+    <section class="container catalog-tools" aria-label="Search tree collection">
+      <div class="catalog-search">
+        <label class="form-label fw-semibold" for="treeSearch">Search trees</label>
+        <input
+          class="form-control"
+          id="treeSearch"
+          type="search"
+          data-catalog-search="trees"
+          placeholder="Search by tree name"
+          autocomplete="off"
+        />
+      </div>
+      <p
+        class="catalog-count"
+        data-catalog-count="trees"
+        role="status"
+        aria-live="polite"
+      >
+        6 trees available.
+      </p>
+      <p class="catalog-empty" data-catalog-empty="trees" hidden>
+        No trees match your search. Try a different name.
+      </p>
+    </section>
     <div data-api-collection="trees" class="row row-cols-1 row-cols-md-3 g-4 m-5">
       <div class="col">
         <div class="card h-100">

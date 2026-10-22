@@ -347,6 +347,40 @@ select:focus-visible {
   margin: clamp(1.5rem, 4vw, 3rem) auto !important;
 }
 
+.catalog-tools {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 0.25rem 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.catalog-search {
+  max-width: 520px;
+}
+
+.catalog-search .form-label {
+  margin-bottom: 0.4rem;
+  color: var(--forest-dark);
+}
+
+.catalog-count,
+.catalog-empty {
+  margin: 0 0 0.65rem;
+  color: #536056;
+}
+
+.catalog-empty {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.catalog-count[hidden],
+.catalog-empty[hidden],
+[data-api-collection] .col[hidden] {
+  display: none !important;
+}
+
 [data-api-collection] .card {
   height: 100%;
   transition:
@@ -671,6 +705,20 @@ footer svg {
   [data-api-collection] {
     width: calc(100% - 1.5rem);
     margin: 1.5rem auto !important;
+  }
+
+  .catalog-tools {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .catalog-search {
+    max-width: none;
+  }
+
+  .catalog-count {
+    margin-bottom: 0;
+    font-size: 0.9rem;
   }
 
   .box1 > h1,
